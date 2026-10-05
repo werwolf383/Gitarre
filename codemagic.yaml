@@ -10,7 +10,7 @@ workflows:
         script: |
           set -e
           rm -rf "$CM_BUILD_DIR/NeonFret"
-          unzip -q "$CM_BUILD_DIR/NeonFret_iPhone_MVP.zip" -d "$CM_BUILD_DIR"
+          unzip -q "$CM_BUILD_DIR/NeonFret_iPhone_MVP_FIXED.zip" -d "$CM_BUILD_DIR"
           test -f "$CM_BUILD_DIR/NeonFret/NeonFret.xcodeproj/project.pbxproj"
       - name: Build iOS Simulator app
         script: |
